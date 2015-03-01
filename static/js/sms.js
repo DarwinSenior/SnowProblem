@@ -55,35 +55,9 @@ var sms={
 		sms.sendReuqest($("#final_transcript").text());
 	},
 
-	snowyFace : [
-	"1.jpg",
-	"2.jpg",
-	"3.jpg",
-	"5.jpg",
-	"7.jpg",
-	"image_139.jpg",
-	"image_153.jpg",
-	"image_166.jpg",
-	"image_180.jpg",
-	"image_192.jpg",
-	"image_205.jpg",
-	"image_218.jpg",
-	"image_231.jpg",
-	"image_245.jpg",
-	"image_260.jpg",
-	"image_275.jpg",
-	"image_290.jpg",
-	"image_305.jpg",
-	"image_320.jpg",
-	"image_335.jpg",
-	"image_347.jpg",
-	"image_427.jpg",
-	"image_428.jpg",
-	"image_558.jpg",
-	],
 
 	changeFace: function(){
-		var rand = Math.floor(Math.random()*sms.snowyFace.length) + 1;
+		var rand = Math.floor(Math.random()*26) + 1;
 		var randimg = $("#face>img:nth-child("+rand+")");
 		randimg.show();
 		randimg.siblings().hide();
