@@ -14,7 +14,6 @@ app = Flask(__name__)
 gs = goslate.Goslate();
 
 
-chatbot.log_directory="./chatbot"
 
 @app.route("/translate/<lang>/<sentence>")
 def translate(lang, sentence):
@@ -27,6 +26,7 @@ def chat(conversation):
 		response = cb.ask(conversation)
 	except Exception, e:
 		chatbot = ChatBot()
+		chatbot.log_directory="./chatbot"
 		response = chatbot.get_response(conversation)
 	return response or " "
 
