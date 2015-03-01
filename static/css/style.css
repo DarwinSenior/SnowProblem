@@ -10,3 +10,19 @@
 .bottom{
 	height: 10%;
 }
+
+.search > div{
+	padding-left: 0;
+	padding-right: 20px; 
+	margin-left: 0;
+	margin-right: 0;
+}
+ul{
+	text-align: center;
+	list-style: none;
+}
+ul > li > .button{
+	margin-top: 0;
+	margin-bottom: 0;
+	width: 100%;
+}

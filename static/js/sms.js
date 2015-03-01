@@ -28,7 +28,7 @@ var sms={
 					function(tranlated){
 						sms.receiveText(tranlated);
 						speaker.speak(text, "en-GB", function(){
-							speaker.speak(tranlated, 'zh-CN', dictation.start());
+							speaker.speak(tranlated, user.to, dictation.start());
 						});
 					});
 			} 
@@ -92,7 +92,7 @@ var sms={
 	translate: function(txt, cb){
 		$.ajax({
 			method: "GET",
-			url: encodeURI("/translate/zh/"+txt),// to change later 
+			url: encodeURI("/translate/"+user.to+"/"+txt),// to change later 
 		}).success(cb);
 	},
 
@@ -115,5 +115,5 @@ var sms={
 		$(".chat").append(newThemText);
 		sms.scrollToButtom();
 		sms.changeFace();
-	},
+	}
 }

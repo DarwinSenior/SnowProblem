@@ -34,10 +34,49 @@
         <script src="static/js/speaker.js"></script>
         <script src="static/js/dictation.js"></script>
         <script src="static/js/sms.js"></script>
+        <script src="static/js/setting.js"></script>
         <title>Hello World</title>
     </head>
-    <body onload="sms.init();dictation.start();">
+    <body onload="sms.init();dictation.start();setting.init();">
           <div class="row">
+            <div class="small-1 columns" id="menuclick"><i class="fa fa-bars fa-2x"></i></div>
+            <div class="small-11 columns" id="menubar">
+              <nav class="top-bar" data-topbar role="navigation">
+                <ul class="title-area">
+                  <li class="name">
+                    <h1><a href="#">SnowProblem</a></h1>
+                  </li>
+                </ul>
+
+                <section class="top-bar-section">
+                  <!-- Right Nav Section -->
+                  <ul class="right">
+                    <li class="active"><a id="set-talking">Talking!</a></li>
+                    <li><a id="set-setting">Setting!</a></li>
+                  </ul>
+                </section>
+              </nav>
+            </div>
+          <div>
+          <div class="row setting">
+            <div class="small-5 small-centered columns">
+              <div class="row search">
+                <div class="small-3 columns">
+                  <label class="right inline"><i class="fa fa-search"></i></label>
+                </div>
+                <div class="small-9 columns">
+                <input type="text" id="search-language" placeholder="language">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row search setting">
+            <div class="small-5 small-centered columns">
+              <ul id="language-list">
+              </ul>
+            </div>
+          </div>
+          <div class="row talking">
             <div class="small-5 small-centered columns" id="face">
               <img src="static/img/1.jpg">
               <img src="static/img/2.jpg">
@@ -65,18 +104,16 @@
               <img src="static/img/image_558.jpg">
             </div>
           </div>
-          <div class="row middle">
+          <div class="row middle talking">
             <div class="small-12 columns">
               <ol class="chat" id="list">
               </ol>
             </div>
           </div>
-          <div class="row bottom">
+          <div class="row bottom talking">
             <div class="small-5 small-centered columns">
               <span id="final_transcript" style="color: blue"></span><span id="intermin_transcript" style="color: red"></span>
             </div>
-          </div>
-          <div class="row">
           </div>
     </body>
 </html>
