@@ -35,24 +35,17 @@
         <script src="static/js/dictation.js"></script>
         <script src="static/js/sms.js"></script>
         <script src="static/js/setting.js"></script>
-        <title>Hello World</title>
+        <title>Snow Problem</title>
     </head>
     <body onload="sms.init();dictation.start();setting.init();">
           <div class="row">
             <div class="small-1 columns" id="menuclick"><i class="fa fa-bars fa-2x"></i></div>
-            <div class="small-11 columns" id="menubar">
-              <nav class="top-bar" data-topbar role="navigation">
-                <ul class="title-area">
-                  <li class="name">
-                    <h1><a href="#">SnowProblem</a></h1>
-                  </li>
-                </ul>
-
+            <div class="small-12 columns" id="menubar">
                 <section class="top-bar-section">
                   <!-- Right Nav Section -->
-                  <ul class="right">
-                    <li class="active"><a id="set-talking">Talking!</a></li>
-                    <li><a id="set-setting">Setting!</a></li>
+                  <ul class="side-nav">
+                    <li class="active talking-click"><a id="set-talking">Talking!</a></li>
+                    <li class="setting-click"><a id="set-setting">Setting!</a></li>
                   </ul>
                 </section>
               </nav>

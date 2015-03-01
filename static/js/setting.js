@@ -91,12 +91,16 @@ var setting={
 
 	talk : function(){
 		$(".talking").show();
+		$(".talking-click").addClass('active');
 		$(".setting").hide();
+		$(".setting-click").removeClass('active');
 	},
 
 	set: function(){
 		$(".talking").hide();
+		$(".talking-click").removeClass('active');
 		$(".setting").show();
+		$(".setting-click").addClass('active');
 	}
 
 }
