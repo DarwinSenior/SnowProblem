@@ -1,0 +1,12 @@
+.top{
+	height: 10%;
+}
+
+.middle{
+	height: 30%;
+	overflow: scroll;
+}
+
+.bottom{
+	height: 10%;
+}

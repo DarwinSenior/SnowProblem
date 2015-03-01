@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <!-- <link rel="stylesheet" type="text/css" href="css/index.css" /> -->
+        <link rel="stylesheet" href="css/foundation.css" />
+        <link rel="stylesheet" type="text/css" href="css/sms.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/font-awesome-4.3.0/css/font-awesome.min.css" />
+        <script src="js/jquery-2.1.3.min.js"></script>
+        <script src="js/vendor/modernizr.js"></script>
+        <script src="js/speaker.js"></script>
+        <script src="js/dictation.js"></script>
+        <script src="js/sms.js"></script>
+        <title>Hello World</title>
+    </head>
+    <body onload="sms.init()；dictation.start()">
+          <div class="row">
+            <div class="small-5 small-centered columns" id="face">
+              <img src="img/1.jpg">
+              <img src="img/2.jpg">
+              <img src="img/3.jpg">
+              <img src="img/5.jpg">
+              <img src="img/7.jpg">
+              <img src="img/image_139.jpg">
+              <img src="img/image_153.jpg">
+              <img src="img/image_166.jpg">
+              <img src="img/image_180.jpg">
+              <img src="img/image_192.jpg">
+              <img src="img/image_205.jpg">
+              <img src="img/image_218.jpg">
+              <img src="img/image_231.jpg">
+              <img src="img/image_245.jpg">
+              <img src="img/image_260.jpg">
+              <img src="img/image_275.jpg">
+              <img src="img/image_290.jpg">
+              <img src="img/image_305.jpg">
+              <img src="img/image_320.jpg">
+              <img src="img/image_335.jpg">
+              <img src="img/image_347.jpg">
+              <img src="img/image_427.jpg">
+              <img src="img/image_428.jpg">
+              <img src="img/image_558.jpg">
+            </div>
+          </div>
+          <div class="row middle">
+            <div class="small-12 columns">
+              <ol class="chat" id="list">
+              </ol>
+            </div>
+          </div>
+          <div class="row bottom">
+            <div class="small-5 small-centered columns">
+              <span id="final_transcript" style="color: blue"></span><span id="intermin_transcript" style="color: red"></span>
+            </div>
+          <div class="row">
+          </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
