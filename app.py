@@ -13,8 +13,6 @@ app = Flask(__name__)
 
 gs = goslate.Goslate();
 
-chatbot = ChatBot()
-cb = Cleverbot()
 
 chatbot.log_directory="./chatbot"
 
@@ -25,8 +23,10 @@ def translate(lang, sentence):
 @app.route("/chatbot/<conversation>")
 def chat(conversation):
 	try:
+		cb = Cleverbot()
 		response = cb.ask(conversation)
 	except Exception, e:
+		chatbot = ChatBot()
 		response = chatbot.get_response(conversation)
 	return response or " "
 
